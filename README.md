@@ -2,13 +2,13 @@
 
 ## Project Status
 
- **Project in Progress**
+**Project in Progress**
 
 This project is being developed as part of my **Energy, Supply Chain & Operations Analytics Portfolio**.
 
 The objective is to explore how data analytics can be used to monitor pipeline movements, identify flow imbalances, and provide operational visibility into inventory conditions.
 
-> **Important:** This is an independent portfolio project designed to demonstrate analytical and technical skills. It does not use confidential Enbridge operational data or represent an official Enbridge system.
+**Important:** This is an independent portfolio project designed to demonstrate analytical and technical skills. It does not use confidential Enbridge operational data or represent an official Enbridge system.
 
 ---
 
@@ -34,7 +34,7 @@ Significant differences between these measurements may indicate situations requi
 
 The analytical question for this project is:
 
-> **Can operational data be used to monitor pipeline flow and inventory conditions and identify periods of potential imbalance?**
+**Can operational data be used to monitor pipeline flow and inventory conditions and identify periods of potential imbalance?**
 
 ---
 
@@ -85,7 +85,6 @@ The analysis will investigate questions such as:
 
 ##  Planned Workflow
 
-```text
 Data Source
      ↓
 Data Collection
@@ -105,7 +104,6 @@ Python Analysis
 Power BI Dashboard
      ↓
 Operational Insights
-```
 
 ---
 
