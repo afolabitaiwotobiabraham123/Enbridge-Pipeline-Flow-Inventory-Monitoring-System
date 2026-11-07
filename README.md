@@ -1,206 +1,214 @@
-# Pipeline Flow & Inventory Monitoring System
+# Enbridge Pipeline Flow & Inventory Monitoring
 
-## Project Status
+**Energy, Supply Chain & Operations Analytics Portfolio Project**
 
-**Project in Progress**
+**Project Status:** In Progress
 
-This project is being developed as part of my **Energy, Supply Chain & Operations Analytics Portfolio**.
+## 1. Project Overview
 
-The objective is to explore how data analytics can be used to monitor pipeline movements, identify flow imbalances, and provide operational visibility into inventory conditions.
+This project focuses on analyzing pipeline flow and inventory-related operational data within the oil and gas transportation sector.
 
-**Important:** This is an independent portfolio project designed to demonstrate analytical and technical skills. It does not use confidential Enbridge operational data or represent an official Enbridge system.
+Using a simulated or publicly available operational dataset, the project will examine incoming and outgoing pipeline flows, inventory movements, flow imbalances, and operational performance over time.
 
----
+The objective is to demonstrate how data analytics can support pipeline monitoring, operational decision-making, and supply chain performance management.
 
-##  Company Context
+**Industry Context:** Enbridge operates major energy transportation infrastructure across North America. This independent portfolio project uses pipeline operations as its business context.
 
-**Enbridge** is an energy infrastructure company with major operations across North America, including pipelines and energy transportation infrastructure.
+**Disclaimer:** This is an independent portfolio project. It is not affiliated with Enbridge and does not use confidential company data or represent an official Enbridge operational system.
 
-For this portfolio project, I am exploring a simplified operational analytics problem around:
+## 2. Business Problem
 
-* Pipeline inflow
-* Pipeline outflow
-* Inventory/storage
-* Flow imbalance
-* Operational exceptions
+Pipeline operations require continuous monitoring of the movement of energy products through transportation networks.
 
----
+Differences between incoming and outgoing volumes can affect inventory levels and may indicate operational conditions that require further investigation.
 
-##  Problem Statement
+Without effective monitoring and analysis, it can be difficult to identify:
 
-Pipeline systems need to maintain a reasonable balance between incoming volumes, outgoing volumes, and available inventory.
+- Periods of significant flow imbalance.
+- Changes in pipeline inventory or linepack.
+- Unusual variations in incoming and outgoing flows.
+- Recurring operational performance patterns.
+- Potential issues requiring operational investigation.
 
-Significant differences between these measurements may indicate situations requiring operational attention.
+This project explores how data analytics can help identify these patterns and provide useful operational insights.
 
-The analytical question for this project is:
+## 3. Project Objectives
 
-**Can operational data be used to monitor pipeline flow and inventory conditions and identify periods of potential imbalance?**
+The objectives are to:
 
----
+1. Collect and organize pipeline-related operational data.
+2. Explore incoming and outgoing flow patterns.
+3. Assess data quality and identify inconsistencies.
+4. Clean and prepare the dataset for analysis.
+5. Analyze pipeline flow and inventory movements.
+6. Calculate relevant operational performance indicators.
+7. Identify periods of potential flow imbalance.
+8. Develop an interactive Power BI dashboard.
+9. Present findings and data-driven operational recommendations.
 
-##  Proposed Solution
+## 4. Scope of Analysis
 
-I plan to build a:
+The analysis will cover the following areas:
 
-### **Pipeline Flow & Inventory Monitoring System**
+### Pipeline Flow Analysis
+- Incoming pipeline volumes.
+- Outgoing pipeline volumes.
+- Daily and monthly flow patterns.
+- Flow variations over time.
+- Differences between inflow and outflow.
 
-The system will combine data analysis and visualization to monitor:
+### Inventory Monitoring
+- Inventory or linepack movements, where supported by the dataset.
+- Changes in inventory over time.
+- Relationship between incoming and outgoing volumes.
+- Periods of inventory increase or decrease.
 
-* Incoming pipeline volumes
-* Outgoing pipeline volumes
-* Inventory/storage levels
-* Daily/weekly flow changes
-* Flow imbalance
-* Operational exceptions
+### Flow Imbalance Analysis
+- Inflow and outflow differences.
+- Magnitude and frequency of flow imbalances.
+- Periods of sustained imbalance.
+- Recurring patterns requiring investigation.
 
----
+### Operational Performance
+- Average and maximum flow rates.
+- Flow variability.
+- Operational exceptions.
+- Performance trends across available periods.
 
-##  Key Analytical Questions
+## 5. Data Sources
 
-The analysis will investigate questions such as:
+The project will use publicly available or simulated pipeline operational data.
 
-1. What are the incoming and outgoing volume patterns?
-2. How does inventory change over time?
-3. When does inflow significantly differ from outflow?
-4. Which periods experience the largest imbalance?
-5. Are there recurring patterns in the imbalance?
-6. How does inventory respond to sustained flow differences?
-7. Which operational periods require further investigation?
+Potential data sources include:
 
----
+- Publicly available energy and pipeline operational datasets.
+- Energy industry reports and publications.
+- Relevant operational data APIs.
+- Simulated datasets where actual operational data is unavailable.
 
-##  Technologies
+All data sources, collection methods, limitations, and assumptions will be documented.
 
-* Python
-* Pandas
-* NumPy
-* SQL
-* MySQL
-* Power BI
-* Data Visualization
-* Data Quality Assessment
-* Data Cleaning
+No confidential Enbridge data will be used.
 
----
+## 6. Tools and Technologies
 
-##  Planned Workflow
+| Tool | Purpose |
+|---|---|
+| Python | Data acquisition and analysis |
+| Jupyter Notebook | Step-by-step data exploration and preparation |
+| Pandas | Data manipulation and cleaning |
+| NumPy | Numerical analysis |
+| MySQL | Structured data storage and SQL analysis |
+| Power BI | Interactive dashboards and visualization |
+| GitHub | Project documentation and version control |
 
-Data Source
-     ↓
-Data Collection
-     ↓
-Data Exploration
-     ↓
-Data Quality Assessment
-     ↓
-Data Cleaning
-     ↓
-SQL Data Analysis
-     ↓
-Operational KPI Development
-     ↓
-Python Analysis
-     ↓
-Power BI Dashboard
-     ↓
-Operational Insights
+## 7. Key Performance Indicators (KPIs)
 
----
+The project will investigate the following KPIs, depending on the fields and measurements available in the selected dataset:
 
-##  Planned KPIs
+| KPI | Description |
+|---|---|
+| Total Inflow | Total volume entering the pipeline |
+| Total Outflow | Total volume leaving the pipeline |
+| Net Flow | Difference between incoming and outgoing volume |
+| Inventory Level | Recorded pipeline inventory or linepack |
+| Flow Imbalance | Difference between inflow and outflow |
+| Inventory Change | Change in recorded inventory over a period |
+| Average Flow | Average recorded pipeline flow |
+| Maximum Flow | Highest recorded flow |
+| Minimum Flow | Lowest recorded flow |
+| Imbalance Periods | Periods identified for further investigation |
 
-Potential KPIs include:
+KPI formulas, units, assumptions, and limitations will be documented after examining the actual dataset.
 
-* Total Inflow
-* Total Outflow
-* Net Flow
-* Inventory Level
-* Flow Imbalance
-* Inventory Change
-* Average Daily Flow
-* Maximum Flow
-* Minimum Flow
-* Exception Periods
+## 8. Project Workflow
 
----
+The project will follow this analytical workflow:
 
-##  Planned Project Structure
+1. Data source identification.
+2. Data acquisition using Python.
+3. Exploratory data analysis using Python and Jupyter Notebook.
+4. Data quality assessment using Python and Jupyter Notebook.
+5. Data cleaning and preparation using Python and Jupyter Notebook.
+6. Loading prepared datasets into MySQL.
+7. SQL-based pipeline flow and inventory analysis.
+8. Operational KPI calculations using SQL.
+9. Dashboard development using Power BI.
+10. Reporting, insights, and operational recommendations.
+
+## 9. Repository Structure
+
+```text
 enbridge-pipeline-flow-inventory-monitoring/
 │
-├── data/
+├── README.md
 │
-├── sql/
-│   ├── 01_data_exploration.sql
-│   ├── 02_data_quality.sql
-│   ├── 03_data_cleaning.sql
-│   └── 04_operational_analysis.sql
+├── data/
+│   ├── raw/
+│   └── processed/
 │
 ├── python/
-│   ├── 01_data_exploration.py
-│   ├── 02_data_quality.py
-│   ├── 03_data_cleaning.py
-│   └── 04_analysis.py
+│   ├── 01_data_acquisition.ipynb
+│   ├── 02_exploratory_data_analysis.ipynb
+│   ├── 03_data_quality_assessment.ipynb
+│   └── 04_data_cleaning_and_preparation.ipynb
 │
-├── powerbi/
+├── mysql/
+│   ├── 01_database_setup.sql
+│   ├── 02_pipeline_flow_analysis.sql
+│   ├── 03_inventory_analysis.sql
+│   ├── 04_operational_kpi_calculations.sql
+│   └── 05_flow_imbalance_analysis.sql
 │
-├── visuals/
+├── power_bi/
+│   ├── dashboard/
+│   └── screenshots/
 │
-└── README.md
+├── reports/
+│   ├── data_quality_report.md
+│   ├── pipeline_flow_analysis.md
+│   ├── inventory_analysis.md
+│   └── operational_insights.md
+│
+├── docs/
+│   ├── data_sources.md
+│   ├── data_dictionary.md
+│   └── kpi_definitions.md
+│
+├── requirements.txt
+│
+└── .gitignore
+```
+
+## 10. Expected Deliverables
+
+- Documented data sources.
+- Raw and processed datasets.
+- Python/Jupyter data acquisition and preparation notebooks.
+- MySQL database and analysis scripts.
+- Operational KPI calculations.
+- Interactive Power BI dashboard.
+- Data quality and analysis reports.
+- Business insights and operational recommendations.
+
+## 11. Business Value
+
+This project demonstrates how supply chain and operations analytics can support pipeline performance monitoring.
+
+The intended business value includes:
+
+- Better visibility into pipeline flow performance.
+- Improved monitoring of inventory movements.
+- Earlier identification of unusual flow patterns.
+- More informed operational investigation.
+- Data-driven decision support for energy transportation operations.
+
+## 12. Project Disclaimer
+
+This is an independent educational and professional portfolio project developed to demonstrate skills in supply chain analytics, operations analytics, data analysis, and business intelligence.
+
+It does not represent Enbridge's internal systems, actual operational performance, or official business recommendations.
 
 ---
 
-##  Project Roadmap
-
-* Identify suitable dataset
-* Understand the data structure
-* Perform data exploration
-* Perform data quality assessment
-* Clean and transform the data
-* Load data into MySQL
-* Develop operational KPIs
-* Perform flow and inventory analysis
-* Identify potential imbalance periods
-* Build Power BI dashboard
-* Document operational insights
-* Publish final project
-
----
-
-##  Skills Demonstrated
-
-This project is intended to demonstrate practical skills in:
-
-**Data Analytics**
-
-* Exploratory Data Analysis
-* KPI development
-* Trend analysis
-* Exception analysis
-
-**Data Engineering**
-
-* Data ingestion
-* Data cleaning
-* SQL data preparation
-* Relational data analysis
-
-**Business & Operations Analytics**
-
-* Pipeline operations
-* Inventory monitoring
-* Flow analysis
-* Operational performance monitoring
-
-**Visualization**
-
-* Power BI
-* Operational dashboards
-* Data storytelling
-
----
-
-##  Disclaimer
-
-This is an independent educational portfolio project.
-
-The project does not represent Enbridge's internal systems, processes, operational decisions, or confidential data.
+**Focus Areas:** Supply Chain Analytics | Operations Analytics | Pipeline Operations | Inventory Monitoring | Energy Analytics | Oil & Gas Data Analysis
